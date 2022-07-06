@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Vidaloka&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us - Physalis</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <img class="logo" src="../img/PhysalisLogo.svg" />
+        <div class="headerMenu">
+          <nav>
+            <ul class="navList">
+              <li>Store</li>
+              <li>Subscription</li>
+              <li>About us</li>
+              <li>Contact us</li>
+            </ul>
+          </nav>
+          <div>
+            <img class="cartIcon" src="../img/ShoppingCart.svg" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Get in touch</h1>
+      </section>
+      <section class="sectionContact">
+        <div class="sectionContainer">
+          <div class="sectionContent">
+            <p class="pRegular">
+              If you have any questions about an order, want to find out about
+              our subscription, or just want to learn more about us, don't
+              hesitate to send us a message! We do our best to respond within 24
+              hours. Or, if you need to get in touch right away, just give us a
+              call!
+            </p>
+            <h3>Contact details</h3>
+            <p class="pRegular">
+              <b>Phone:</b> 0 123 456 789 <br />
+              <b>Email:</b> contact@physalis.com<br /><br />
+              <b>Working hours:</b> 08:00-22:00
+            </p>
+          </div>
+          <form class="contactForm">
+            <div class="names">
+              <div class="fName">
+                <label for="fName">FIRST NAME</label>
+                <input type="text" name="fName" id="fName" />
+              </div>
+              <div class="lName">
+                <label for="lName">LAST NAME</label>
+                <input type="text" name="lName" id="lName" />
+              </div>
+            </div>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" />
+            <label for="message">MESSAGE</label>
+            <textarea type="text" name="message" id="message"></textarea>
+            <button type="submit" class="buttonPrimaryMedium">
+              Send message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="emailSignUp">
+        <div class="emailSignUpContainer">
+          <div>
+            <h3>Be the first to know about our latest offers.</h3>
+            <p>
+              Sign up to our newsletter for news, exclusive deals, and more!
+            </p>
+          </div>
+          <div class="emailForm">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              class="emailField"
+            />
+            <button type="submit" class="buttonSecondaryLarge">Sign up</button>
+          </div>
+        </div>
+      </section>
+      <section class="footerBar">
+        <div class="footerBarContainer">
+          <nav>
+            <ul class="navList">
+              <li>Home</li>
+              <li>Store</li>
+              <li>About us</li>
+              <li>Contact us</li>
+            </ul>
+          </nav>
+          <p>Physalis © 2022. All rights reserved.</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

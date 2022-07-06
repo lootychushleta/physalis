@@ -1,0 +1,163 @@
+/*Product Info*/
+.productInfo {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px;
+}
+
+.productInfoContainer {
+  width: 1140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.productInfoContainer h2 {
+  margin-bottom: 20px;
+}
+
+.productInfoContainer .pRegular {
+  margin-bottom: 60px;
+}
+
+.productInfoContainer img {
+  width: 505px;
+  border-radius: 8px;
+}
+
+.productBuy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.productBuy p {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.3;
+  cursor: default;
+  color: #1e2837;
+}
+
+.productBuy button {
+  padding: 0px 50px;
+}
+
+/*Product Gallery*/
+.productGallery {
+  height: 200px;
+  background-color: #003741;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.productGallery img {
+  height: 200px;
+}
+
+/*Related Products*/
+.similarProducts {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px;
+  gap: 40px;
+}
+
+.similarProducts h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3;
+  cursor: default;
+  color: #1e2837;
+}
+
+.productsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/*Product Cards*/
+.productCard {
+  width: 262px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  filter: drop-shadow(0px 8px 20px rgba(30, 40, 55, 0.2));
+  padding-bottom: 20px;
+}
+
+.productCard img {
+  width: 262px;
+  margin-bottom: 20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.productCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.productCardBuy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productCard h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.3;
+  cursor: default;
+  color: #1e2837;
+}
+
+.productCardPrice {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  cursor: default;
+  color: #1e2837;
+  margin-right: 25px;
+}
+
+.buttonProductCard {
+  height: 40px;
+  background-color: #ff5656;
+  border: 0;
+  border-radius: 20px;
+  padding: 0px 30px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}

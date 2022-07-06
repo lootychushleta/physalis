@@ -1,0 +1,39 @@
+/*Hero*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+  background-color: #fafafa;
+}
+
+/*Content Section with Image - Left*/
+.contentWithImageLight {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafa;
+}
+
+.contentWithImageLight .container {
+  width: 1140px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.contentWithImageLight img {
+  height: 363px;
+}
+
+.contentWithImageLight p {
+  width: 515px;
+  cursor: default;
+  text-align: left;
+} 

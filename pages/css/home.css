@@ -1,0 +1,239 @@
+/*Hero*/
+.hero {
+    background-image: url(../../img/HomeHero.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 483px;
+  }
+  
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1140px;
+    margin: 130px 0px;
+  }
+  
+  .heroContent {
+    margin-bottom: 60px;
+  }
+  
+  .heroContent h1 {
+    color: #003741;
+  }
+  
+  .heroContent .subtitle {
+    color: #1e2837;
+  }
+  
+  /*Benefits*/
+  .benefits {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .benefitsContainer {
+    width: 1140px;
+    padding: 40px 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .benefit {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .benefit img {
+    width: 80px;
+  }
+  
+  .benefit p {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #1e2837;
+    text-align: center;
+    cursor: default;
+  }
+  
+  /*Content Section with Image - Left*/
+  .contentWithImageDarkLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    background-color: #003741;
+  }
+  
+  .contentWithImageDarkLeft .sectionImage {
+    width: 50vw;
+    background-image: url(../../img/ContentImg-Mission.jpg);
+    background-size: cover;
+    background-position: right;
+  }
+  
+  .contentWithImageDarkLeft .sectionContentContainer {
+    width: 50vw;
+    justify-content: right;
+    color: white;
+  }
+  
+  .contentWithImageDarkLeft .sectionContent {
+    width: 515px;
+    padding: 60px 0px;
+    margin-left: 55px;
+    text-align: left;
+    cursor: default;
+  }
+  
+  .sectionContentContainer h2 {
+    font-family: "Vidaloka", serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    cursor: default;
+  }
+  
+  /*Services section*/
+  .sectionServices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fafafa;
+    padding: 60px 0px;
+  }
+  
+  .sectionServicesContainer {
+    width: 1140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sectionServicesContainer .sectionContentContainer {
+    width: 360px;
+  }
+  
+  /*Service Cards*/
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .card {
+    position: absolute;
+    width: 300px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 16px;
+    filter: drop-shadow(0px 8px 20px rgba(30, 40, 55, 0.2));
+  }
+  
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #item-1 .cardContentImg {
+    background-image: url(../../img/ServiceCard-GiftBundles.jpg);
+    background-size: cover;
+  }
+
+  #item-2 .cardContentImg {
+    background-image: url(../../img/ServiceCard-Subscription.jpg);
+    background-size: cover;
+  }
+
+  #item-3 .cardContentImg {
+    background-image: url(../../img/ServiceCard-Occasions.jpg);
+    background-size: cover;
+  }
+  
+  .cardContent h3 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #1e2837;
+    margin-bottom: 5x;
+  }
+  
+  .cardContent p {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3b424d;
+    margin-bottom: 30px;
+  }
+  
+  .cardContentImg {
+    width: 100%;
+    height: 115px;
+    background-color: #ff5656;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .service-cards-container {
+    width: 590px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cards {
+    position: relative;
+    left: 20%;
+    width: 590px;
+    height: 336px;
+  }
+  
+  #item-1:checked ~ .cards #item-3,
+  #item-2:checked ~ .cards #item-1,
+  #item-3:checked ~ .cards #item-2 {
+    transform: translatex(-40%) scale(0.8);
+    opacity: 0.5;
+    z-index: 0;
+    filter: blur(4px) drop-shadow(0px 8px 20px rgba(30, 40, 55, 0.2));
+  }
+  
+  #item-1:checked ~ .cards #item-2,
+  #item-2:checked ~ .cards #item-3,
+  #item-3:checked ~ .cards #item-1 {
+    transform: translatex(40%) scale(0.8);
+    opacity: 0.5;
+    z-index: 0;
+    filter: blur(4px) drop-shadow(0px 8px 20px rgba(30, 40, 55, 0.2));
+  }
+  
+  #item-1:checked ~ .cards #item-1,
+  #item-2:checked ~ .cards #item-2,
+  #item-3:checked ~ .cards #item-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+  }
+  

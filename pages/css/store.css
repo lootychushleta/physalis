@@ -1,0 +1,97 @@
+/*Hero*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px;
+  background-color: #fafafa;
+  color: #003741;
+}
+
+/*Products*/
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+  background-color: #fafafa;
+}
+
+.productsContainer {
+  width: 1140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Product Cards*/
+.productCard {
+  width: 262px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  filter: drop-shadow(0px 8px 20px rgba(30, 40, 55, 0.2));
+  padding-bottom: 20px;
+}
+
+.productCard img {
+  width: 262px;
+  margin-bottom: 20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.productCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.productCardBuy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productCard h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.3;
+  cursor: default;
+  color: #1e2837;
+}
+
+.productCardPrice {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  cursor: default;
+  color: #1e2837;
+  margin-right: 25px;
+}
+
+.buttonProductCard {
+  height: 40px;
+  background-color: #ff5656;
+  border: 0;
+  border-radius: 20px;
+  padding: 0px 30px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
