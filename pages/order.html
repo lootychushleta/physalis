@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/order.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Vidaloka&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,94 +17,141 @@
   <body>
     <header>
       <div class="headerContainer">
-        <img class="logo" src="../img/PhysalisLogo.svg" />
-        <nav>
-          <ul class="navList">
-            <li>Store</li>
-            <li>About us</li>
-            <li>Contact us</li>
-          </ul>
-        </nav>
-        <div>
-          <img
-            class="cartIcon"
-            src="../img/placeholder.png"
-            width="50px"
-            height="50px"
-          />
+        <a href="home.html"
+          ><img class="logo" src="../img/PhysalisLogo.svg"
+        /></a>
+        <div class="headerMenu">
+          <nav>
+            <ul class="navList">
+              <li>
+                <a href="store.html">Store</a>
+              </li>
+              <li>
+                <a href="subscription.html">Subscription</a>
+              </li>
+              <li>
+                <a href="about.html">About us</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <img class="cartIcon" src="../img/ShoppingCart.svg" />
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <section>
+      <section class="deliverySection">
+        <h2>Delivery address</h2>
+        <div class="addressForm">
+          <form>
+            <div class="names">
+              <div class="fName">
+                <label for="fName">FIRST NAME</label>
+                <input type="text" name="fName" id="fName" />
+              </div>
+              <div class="lName">
+                <label for="lName">LAST NAME</label>
+                <input type="text" name="lName" id="lName" />
+              </div>
+            </div>
+            <label for="address">ADDRESS</label>
+            <input type="text" name="address" id="address" />
+            <div class="cityPostcode">
+              <div class="city">
+                <label for="city">CITY</label>
+                <input type="text" name="city" id="city" />
+              </div>
+              <div class="postcode">
+                <label for="postcode">POSTCODE</label>
+                <input type="text" name="postcode" id="postcode" />
+              </div>
+            </div>
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" name="phone" id="phone" />
+            <label for="message">PERSONALISED MESSAGE</label>
+            <textarea name="message" id="message"></textarea>
+          </form>
+        </div>
+      </section>
+      <section class="paymentSection">
         <div>
-          <div>
-            <h2>Delivery address</h2>
-          </div>
-          <div class="addressForm">
+          <h2>Payment</h2>
+          <div class="paymentForm">
             <form>
-              <label for="fName">FIRST NAME</label>
-              <label for="lName">LAST NAME</label><br />
-              <input type="text" name="fName" />
-              <input type="text" name="lName" /><br />
-              <label for="address">ADDRESS</label><br />
-              <input type="text" name="address" /><br />
-              <label for="city">CITY</label>
-              <label for="postcode">POSTCODE</label><br />
-              <input type="text" name="city" />
-              <input type="text" name="postcode" /><br />
-              <label for="phone">PHONE NUMBER</label><br />
-              <input type="tel" name="phone" /><br />
-              <label for="message">PERSONALISED MESSAGE</label><br />
-              <input type="text" name="message" />
+              <div class="names">
+                <div class="fName">
+                  <label for="fName">FIRST NAME</label>
+                  <input type="text" name="fName" id="fName" />
+                </div>
+                <div class="lName">
+                  <label for="lName">LAST NAME</label>
+                  <input type="text" name="lName" id="lName" />
+                </div>
+              </div>
+              <label for="card">CARD NUMBER</label>
+              <input type="text" name="card" id="card" />
+              <div class="cardInfo">
+                <div class="expDate">
+                  <label for="expDate">EXPIRATION DATE</label>
+                  <input type="text" name="expDate" id="expDate" />
+                </div>
+                <div class="cvc">
+                  <label for="cvc">CVC</label>
+                  <input type="text" name="cvc" id="cvc" />
+                </div>
+              </div>
             </form>
           </div>
-          <div>
-            <div>
-              <h2>Payment</h2>
-            </div>
-            <div class="paymentForm">
-              <form>
-                <label for="fName">FIRST NAME</label>
-                <label for="lName">LAST NAME</label><br />
-                <input type="text" name="fName" />
-                <input type="text" name="lName" /><br />
-                <label for="card">CARD NUMBER</label><br />
-                <input type="text" name="card" /><br />
-                <label for="expDate">EXPIRATION DATE</label>
-                <label for="cvc">CVC</label><br />
-                <input type="text" name="expDate" />
-                <input type="text" name="cvc" />
-              </form>
-            </div>
-            <button>Place order</button>
-          </div>
+          <button type="submit" class="buttonPrimaryLarge">Place order</button>
         </div>
       </section>
     </main>
     <footer>
       <section class="emailSignUp">
-        <div>
-          <h3>Be the first to know about our latest offers.</h3>
-          <p>Sign up to our newsletter for news, exclusive deals, and more!</p>
-        </div>
-        <div>
-          <form>
-            <input type="email" placeholder="Enter your email address" />
-            <input type="submit" value="Sign up" />
-          </form>
+        <div class="emailSignUpContainer">
+          <div>
+            <h3>Be the first to know about our latest offers.</h3>
+            <p>
+              Sign up to our newsletter for news, exclusive deals, and more!
+            </p>
+          </div>
+          <div class="emailForm">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              class="emailField"
+            />
+            <button type="submit" class="buttonSecondaryLarge">Sign up</button>
+          </div>
         </div>
       </section>
-      <section>
-        <nav>
-          <ul class="navList">
-            <li>Home</li>
-            <li>Store</li>
-            <li>About us</li>
-            <li>Contact us</li>
-          </ul>
-        </nav>
-        <p>Physalis © 2022. All rights reserved.</p>
+      <section class="footerBar">
+        <div class="footerBarContainer">
+          <nav>
+            <ul class="navList">
+              <li>
+                <a href="home.html">Home</a>
+              </li>
+              <li>
+                <a href="store.html">Store</a>
+              </li>
+              <li>
+                <a href="subscription.html">Subscription</a>
+              </li>
+              <li>
+                <a href="about.html">About us</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <p>Physalis © 2022. All rights reserved.</p>
+        </div>
       </section>
     </footer>
   </body>

@@ -79,6 +79,10 @@
     gap: 0;
     background-color: #003741;
   }
+
+  .contentWithImageDarkLeft h2 {
+    color: white;
+  }
   
   .contentWithImageDarkLeft .sectionImage {
     width: 50vw;

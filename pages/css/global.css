@@ -59,8 +59,13 @@ header {
   color: white;
 }
 
-.navList li {
+.navList li a {
   cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  text-decoration-line: none;
 }
 
 .cartIcon {
@@ -93,6 +98,11 @@ header {
   font-size: 18px;
   color: white;
   cursor: pointer;
+}
+
+button a {
+  text-decoration-line: none;
+  color: white;
 }
 
 .buttonSecondaryLarge {
@@ -152,6 +162,10 @@ h2 {
   font-size: 16px;
   line-height: 1.5;
   cursor: default;
+}
+
+a {
+  text-decoration-line: none;
 }
 
 /*//Footer//*/
@@ -245,6 +259,15 @@ h2 {
   font-weight: 400;
   font-size: 16px;
   color: #1e2837;
+}
+
+.footerBarContainer .navList li a {
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1e2837;
+  text-decoration-line: none;
 }
 
 .footerBarContainer p {
