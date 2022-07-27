@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 1140px;
-    margin: 130px 0px;
+    margin: 130px 15px;
   }
   
   .heroContent {
@@ -42,6 +42,7 @@
   .benefitsContainer {
     width: 1140px;
     padding: 40px 55px;
+    margin: 0px 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -93,6 +94,7 @@
   
   .contentWithImageDarkLeft .sectionContentContainer {
     width: 50vw;
+    margin-right: 15px;
     justify-content: right;
     color: white;
   }
@@ -133,6 +135,7 @@
   
   .sectionServicesContainer .sectionContentContainer {
     width: 360px;
+    margin-left: 15px;
   }
   
   /*Service Cards*/
@@ -179,7 +182,7 @@
     font-weight: 700;
     font-size: 24px;
     color: #1e2837;
-    margin-bottom: 5x;
+    margin-bottom: 10px;
   }
   
   .cardContent p {

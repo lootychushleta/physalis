@@ -20,6 +20,7 @@
 
 .contentWithImageLight .container {
   width: 1140px;
+  margin: 0px 15px;
   display: flex;
   flex-direction: row;
   align-content: center;

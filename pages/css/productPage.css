@@ -10,6 +10,7 @@
 
 .productInfoContainer {
   width: 1140px;
+  margin: 0px 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -160,4 +161,9 @@
   font-size: 18px;
   color: white;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.buttonProductCard:hover {
+  background-color: #ff2626;
 }

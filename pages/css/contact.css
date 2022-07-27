@@ -20,6 +20,7 @@
 .sectionContainer {
   padding: 60px 0px 120px 0px;
   width: 1140px;
+  margin: 0px 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

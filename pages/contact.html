@@ -13,8 +13,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact us - Physalis</title>
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
-  <body>
+  <body id="body">
+    <div id="newsletterSuccessfulSignUp" class="popup">
+      <div class="popupContent">
+        <h2 class="h2Popup">Success!</h2>
+        <p id="userNewsletterEmail"></p>
+        <p class="pRegular">has been added to our mailing list.</p>
+        <button type="button" id="buttonClosePopup" class="buttonPrimaryMedium">
+          OK
+        </button>
+      </div>
+    </div>
+    <div id="messageSent" class="popup">
+      <div class="popupContent">
+        <h2 id="messageSentH2" style="margin-bottom: 20px"></h2>
+        <p class="pRegular" style="text-align: center">
+          We have received your message and will get back to you soon.
+        </p>
+        <button
+          type="button"
+          id="buttonCloseMessagePopup"
+          class="buttonPrimaryMedium"
+          onclick="closeMessagePopup()"
+        >
+          OK
+        </button>
+      </div>
+    </div>
     <header>
       <div class="headerContainer">
         <a href="home.html"
@@ -37,9 +64,6 @@
               </li>
             </ul>
           </nav>
-          <div>
-            <img class="cartIcon" src="../img/ShoppingCart.svg" />
-          </div>
         </div>
       </div>
     </header>
@@ -64,22 +88,32 @@
               <b>Working hours:</b> 08:00-22:00
             </p>
           </div>
-          <form class="contactForm">
+          <form class="contactForm" id="contactForm">
             <div class="names">
               <div class="fName">
                 <label for="fName">FIRST NAME</label>
-                <input type="text" name="fName" id="fName" />
+                <input type="text" name="fName" id="fName" required />
               </div>
               <div class="lName">
                 <label for="lName">LAST NAME</label>
-                <input type="text" name="lName" id="lName" />
+                <input type="text" name="lName" id="lName" required />
               </div>
             </div>
             <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" required />
             <label for="message">MESSAGE</label>
-            <textarea type="text" name="message" id="message"></textarea>
-            <button type="submit" class="buttonPrimaryMedium">
+            <textarea
+              type="text"
+              name="message"
+              id="message"
+              required
+            ></textarea>
+            <button
+              type="button"
+              class="buttonPrimaryMedium"
+              id="buttonSubmitContactForm"
+              onclick="submitMessage()"
+            >
               Send message
             </button>
           </form>
@@ -99,9 +133,17 @@
             <input
               type="email"
               placeholder="Enter your email address"
+              name=""
               class="emailField"
+              id="newsletterEmail"
             />
-            <button type="submit" class="buttonSecondaryLarge">Sign up</button>
+            <button
+              type="button"
+              class="buttonSecondaryLarge"
+              id="newsletterSignUpButton"
+            >
+              Sign up
+            </button>
           </div>
         </div>
       </section>
@@ -131,4 +173,5 @@
       </section>
     </footer>
   </body>
+  <script type="text/javascript" src="js/popupFunctions.js"></script>
 </html>

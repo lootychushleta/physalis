@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   width: 1140px;
-  margin: 130px 0px;
+  margin: 130px 15px;
 }
 
 .heroContainer button {
@@ -34,12 +34,13 @@
 
 .description .pRegular {
   width: 1140px;
+  margin: 0px 15px 60px 15px;
   text-align: center;
-  margin-bottom: 60px;
 }
 
 .benefits {
   width: 1140px;
+  margin: 0px 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

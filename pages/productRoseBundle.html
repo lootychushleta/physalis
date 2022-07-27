@@ -14,7 +14,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Affection Bundle - Physalis</title>
   </head>
-  <body>
+  <body id="body">
+    <div id="newsletterSuccessfulSignUp" class="popup">
+      <div class="popupContent">
+        <h2 class="h2Popup">Success!</h2>
+        <p id="userNewsletterEmail"></p>
+        <p class="pRegular">has been added to our mailing list.</p>
+        <button type="button" id="buttonClosePopup" class="buttonPrimaryMedium">OK</button>
+      </div>
+    </div>
     <header>
       <div class="headerContainer">
         <a href="home.html"
@@ -37,9 +45,6 @@
               </li>
             </ul>
           </nav>
-          <div>
-            <img class="cartIcon" src="../img/ShoppingCart.svg" />
-          </div>
         </div>
       </div>
     </header>
@@ -59,7 +64,7 @@
             </p>
             <div class="productBuy">
               <p>£19.99</p>
-              <button type="button" class="buttonPrimaryLarge">Order</button>
+              <a href="order.html"><button type="button" class="buttonPrimaryLarge">Order</button></a>
             </div>
           </div>
         </div>
@@ -120,9 +125,17 @@
             <input
               type="email"
               placeholder="Enter your email address"
+              name=""
               class="emailField"
+              id="newsletterEmail"
             />
-            <button type="submit" class="buttonSecondaryLarge">Sign up</button>
+            <button
+              type="button"
+              class="buttonSecondaryLarge"
+              id="newsletterSignUpButton"
+            >
+              Sign up
+            </button>
           </div>
         </div>
       </section>
@@ -152,4 +165,5 @@
       </section>
     </footer>
   </body>
+  <script type="text/javascript" src="js/popupFunctions.js"></script>
 </html>

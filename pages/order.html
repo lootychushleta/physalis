@@ -9,12 +9,39 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Vidaloka&display=swap"
       rel="stylesheet"
     />
+    <script type="text/javascript" src="js/script.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order - Physalis</title>
   </head>
-  <body>
+  <body id="body">
+    <div id="newsletterSuccessfulSignUp" class="popup">
+      <div class="popupContent">
+        <h2 class="h2Popup">Success!</h2>
+        <p id="userNewsletterEmail"></p>
+        <p class="pRegular">has been added to our mailing list.</p>
+        <button type="button" id="buttonClosePopup" class="buttonPrimaryMedium">
+          OK
+        </button>
+      </div>
+    </div>
+    <div id="orderSent" class="popup">
+      <div class="popupContent">
+        <h2 class="h2Popup">Order received!</h2>
+        <p class="pRegular" style="text-align:center">
+          We will contact you soon to confirm your order.
+        </p>
+        <button
+          type="button"
+          id="buttonCloseOrderPopup"
+          class="buttonPrimaryMedium"
+          onclick="closeOrderPopup()"
+        >
+          OK
+        </button>
+      </div>
+    </div>
     <header>
       <div class="headerContainer">
         <a href="home.html"
@@ -37,9 +64,6 @@
               </li>
             </ul>
           </nav>
-          <div>
-            <img class="cartIcon" src="../img/ShoppingCart.svg" />
-          </div>
         </div>
       </div>
     </header>
@@ -85,13 +109,17 @@
               <div class="names">
                 <div class="fName">
                   <label for="fName">FIRST NAME</label>
-                  <input type="text" name="fName" id="fName" />
+                  <input type="text" name="fName" id="userfName" />
                 </div>
                 <div class="lName">
                   <label for="lName">LAST NAME</label>
-                  <input type="text" name="lName" id="lName" />
+                  <input type="text" name="lName" id="userlName" />
                 </div>
               </div>
+              <label for="phone">EMAIL</label>
+              <input type="email" name="email" id="userEmail" />
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" name="phone" id="userPhone" />
               <label for="card">CARD NUMBER</label>
               <input type="text" name="card" id="card" />
               <div class="cardInfo">
@@ -106,7 +134,14 @@
               </div>
             </form>
           </div>
-          <button type="submit" class="buttonPrimaryLarge">Place order</button>
+          <button
+            type="button"
+            class="buttonPrimaryLarge"
+            id="buttonSubmitOrder"
+            onclick="submitOrder()"
+          >
+            Place order
+          </button>
         </div>
       </section>
     </main>
@@ -123,9 +158,17 @@
             <input
               type="email"
               placeholder="Enter your email address"
+              name=""
               class="emailField"
+              id="newsletterEmail"
             />
-            <button type="submit" class="buttonSecondaryLarge">Sign up</button>
+            <button
+              type="button"
+              class="buttonSecondaryLarge"
+              id="newsletterSignUpButton"
+            >
+              Sign up
+            </button>
           </div>
         </div>
       </section>
@@ -155,4 +198,5 @@
       </section>
     </footer>
   </body>
+  <script type="text/javascript" src="js/popupFunctions.js"></script>
 </html>
